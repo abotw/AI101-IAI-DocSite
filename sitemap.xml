@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>http://abotw.github.io/AI101-IAI-DocSite/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>http://abotw.github.io/AI101-IAI-DocSite/OpenCV/attachments/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>http://abotw.github.io/AI101-IAI-DocSite/OpenCV/opencv/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>http://abotw.github.io/AI101-IAI-DocSite/OpenCV/usage/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>http://abotw.github.io/AI101-IAI-DocSite/OpenCV/basics/read_image/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>http://abotw.github.io/AI101-IAI-DocSite/OpenCV/basics/read_video/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+</urlset>
