@@ -56,7 +56,7 @@ while True:
 # Release resources
 video_capture.release()
 cv2.destroyAllWindows()
-````
+```
 
 ---
 
