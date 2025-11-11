@@ -1,0 +1,14 @@
+site_name: AI101-IAI
+site_url: http://abotw.github.io/AI101-IAI-DocSite
+theme:
+  name: material
+  features:
+    - content.code.copy
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
