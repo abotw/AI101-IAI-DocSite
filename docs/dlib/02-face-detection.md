@@ -46,9 +46,7 @@ import cv2
 ```
 
 - `dlib`: Provides machine learning and computer vision tools, including its famous face detector.
-    
 - `cv2`: OpenCV, used for image loading, color conversion, and visualization.
-    
 
 ---
 
@@ -62,10 +60,8 @@ This loads dlib’s built-in **HOG + SVM** face detector.
 
 - **HOG (Histogram of Oriented Gradients)**  
     Used to extract gradient orientation features from the image.
-    
 - **SVM (Support Vector Machine)**  
     A classifier trained to distinguish faces from non-faces.
-    
 
 This detector works well for frontal human faces and runs fully on CPU.
 
@@ -101,26 +97,17 @@ Each rectangle represents one detected face.
 #### The meaning of the second argument (`2`):
 
 - It specifies **upsampling** during detection.
-    
 - Upsampling makes the image larger temporarily, allowing the detector to find **small faces**.
-    
 - Trade-off:
-    
     - Larger number → more accuracy
-        
     - But slower processing
-        
 
 Common values:
 
 - `0`: Fastest, but misses small faces
-    
 - `1`: Better accuracy
-    
 - `2`: Even better (your example)
-    
 - `3`: Rarely used (slow)
-    
 
 ---
 
@@ -135,17 +122,11 @@ for face in faces:
 #### What’s happening:
 
 - Each `face` is a rectangle with:
-    
     - `.left()` = x coordinate of the left boundary
-        
     - `.top()` = top boundary
-        
     - `.right()` = right boundary
-        
     - `.bottom()` = bottom boundary
-        
 - We draw a green rectangle (`(0,255,0)`) of thickness `2` around each detected face.
-    
 
 ---
 
@@ -157,9 +138,7 @@ cv2.waitKey(0)
 ```
 
 - Shows the image with the drawn rectangles
-    
 - `waitKey(0)` waits indefinitely until the user closes the window or presses a key
-    
 
 ---
 
@@ -172,15 +151,10 @@ HOG is a feature descriptor that captures edge directions in local regions of an
 Steps:
 
 1. Convert the image to grayscale
-    
 2. Compute gradients
-    
 3. Divide the image into small cells
-    
 4. Build histograms of gradient orientations
-    
 5. Normalize (improves robustness to lighting)
-    
 
 Faces have distinctive gradient patterns (eyes, nose, chin), making HOG effective.
 
@@ -191,22 +165,15 @@ Faces have distinctive gradient patterns (eyes, nose, chin), making HOG effectiv
 dlib trains a **linear SVM** classifier:
 
 - Positive samples → faces
-    
 - Negative samples → non-faces
-    
 - SVM learns a boundary to separate face-like patterns from everything else
-    
 
 In detection:
 
 - A sliding window scans the image
-    
 - HOG features extracted
-    
 - SVM classifies each window
-    
 - Windows classified as face are returned as bounding boxes
-    
 
 ---
 
@@ -219,9 +186,7 @@ Upsampling enlarges the image → improves detection.
 Example:
 
 - original 100×100 → upsample ×2 → 200×200
-    
 - small faces become easier to detect
-    
 
 ---
 
@@ -230,24 +195,16 @@ Example:
 #### **Pros**
 
 - Fast on CPU
-    
 - No GPU required
-    
 - Works offline
-    
 - Very stable for frontal faces
-    
 - Lightweight, easy to integrate
-    
 
 #### **Cons**
 
 - Not good for side faces or extreme angles
-    
 - Cannot detect very tiny faces well (even with upsampling)
-    
 - Slower than modern CNN detectors at high upsampling
-    
 
 ---
 
@@ -278,26 +235,17 @@ small = cv2.resize(img_rgb, (0,0), fx=0.5, fy=0.5)
 This program:
 
 1. Loads dlib’s HOG + SVM face detector
-    
 2. Reads and converts an image from BGR → RGB
-    
 3. Detects faces with upsampling
-    
 4. Draws rectangles around detected faces
-    
 5. Displays the result
-    
 
 Behind the scenes, dlib uses:
 
 - **HOG** to extract gradients
-    
 - **SVM** to classify face vs non-face
-    
 - **Sliding window** scanning
-    
 - **Upsampling** to find small faces
-    
 
 This makes the script a clean and effective example of classical computer vision–based face detection.
 
