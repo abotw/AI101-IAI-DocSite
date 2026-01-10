@@ -1,0 +1,2517 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://abotw.github.io/docs-ai/draft/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../tags/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Draft - Docs-AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Docs-AI" class="md-header__button md-logo" aria-label="Docs-AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs-AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Draft
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/abotw/docs-ai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Docs-AI" class="md-nav__button md-logo" aria-label="Docs-AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Docs-AI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/abotw/docs-ai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI101
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Draft
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Draft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 一、整体学习思路（学习路线图）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 一、整体学习思路（学习路线图）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 1：硬件入门与系统环境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 2：OpenCV 图像处理基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 3：AI 视觉与识别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 4：AI 视觉追踪与抓取
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 5：语音控制与人机交互
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6ros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 6：ROS 机器人操作系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7ros-opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 7：ROS + OpenCV 综合应用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8mediapipe-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 8：MediaPipe 高级 AI 感知
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 9：运动学与路径规划
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 二、关键技术要点（核心知识地图）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 三、学习建议与顺序
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 四、学习终点与成果
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dofbot SE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dofbot SE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/01rgb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/02buzzer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Buzzer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/03single_servo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Single Servo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/04servo_position/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Servo Position
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/05six_servos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Six Servos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dofbot-SE/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arm Motion Memory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FaceSwap
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FaceSwap
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FaceSwap/pt1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FaceSwap/pt2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCV
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OpenCV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/01-brief-intro-to-opencv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brief Intro to OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/02-common-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 Common OpenCV Usage Examples in Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/attachments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attachments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/opencv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCV Common Usages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/advanced/Untitled%201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Untitled 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/advanced/Untitled/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Untitled
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/advanced/support-chinese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📘 How to Enable Chinese Text in OpenCV (with Example)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/basics/ROI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/basics/image_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Image Operations in OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/basics/img_add/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Image Arithmetic Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/basics/read-image/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📸 Reading an Image with `cv2.imread()`
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCV/basics/read_video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read and Display a Video File
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dlib
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dlib
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/01-dlib-brief-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 Dlib Library in Python: A Brief Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/02-face-detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Face Detection with dlib and OpenCV — Detailed Explanation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/02-face-swap-in-dlib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 Face Swap with Dlib and Python: A Step-by-Step Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/03-cam_68/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 cam 68
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/04-real-time_drowsiness_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real-time Drowsiness Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/Untitled/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Untitled
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/face-detection-and-landmark-recognition-with-opencv-and-dlib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Face detection and landmark recognition with opencv and dlib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dlib/quicklinks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quicklinks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persons
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Persons
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../persons/feifei-li/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fei-Fei Li | 李飞飞
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../persons/kaiming-he/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kaiming He | 何凯明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../persons/persons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../persons/yangqing-jia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yangqing Jia | 贾扬青
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 一、整体学习思路（学习路线图）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 一、整体学习思路（学习路线图）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 1：硬件入门与系统环境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 2：OpenCV 图像处理基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 3：AI 视觉与识别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 4：AI 视觉追踪与抓取
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 5：语音控制与人机交互
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6ros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 6：ROS 机器人操作系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7ros-opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 7：ROS + OpenCV 综合应用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8mediapipe-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 8：MediaPipe 高级 AI 感知
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 9：运动学与路径规划
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 二、关键技术要点（核心知识地图）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 三、学习建议与顺序
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 四、学习终点与成果
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Draft</h1>
+
+<p>下面这份目录是一个<strong>完整的 AI 机械臂开发学习体系</strong>的课程蓝图。它从<strong>硬件装配 → 系统环境 → 编程控制 → 计算机视觉 → AI 感知 → ROS 机器人控制 → 高级运动学规划</strong>逐步进阶。</p>
+<h2 id="_1">🧭 一、整体学习思路（学习路线图）</h2>
+<p>这份教程是一个典型的 <strong>「机器人系统开发全流程课程」</strong>，学习思路应遵循以下阶段：</p>
+<h3 id="1"><strong>阶段 1：硬件入门与系统环境</strong></h3>
+<blockquote>
+<p>目标：能组装、连接并控制机械臂的基本动作。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>机械臂的 <strong>安装、中位校准、舵机控制</strong></p>
+</li>
+<li>
+<p>Linux 基础命令、Ubuntu 环境</p>
+</li>
+<li>
+<p>JupyterLab 开发环境搭建</p>
+</li>
+<li>
+<p>基本的 RGB 灯、蜂鸣器、舵机控制实验</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>串口通信 / PWM 控制舵机</p>
+</li>
+<li>
+<p>Linux 文件系统与命令操作</p>
+</li>
+<li>
+<p>Python 控制硬件的基本接口</p>
+</li>
+<li>
+<p>调试工具与设备 ID 绑定</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="2opencv"><strong>阶段 2：OpenCV 图像处理基础</strong></h3>
+<blockquote>
+<p>目标：掌握图像的读取、处理、变换与绘制，为 AI 视觉奠定基础。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>图像 I/O（读写、显示、保存）</p>
+</li>
+<li>
+<p>图像变换（缩放、旋转、平移、镜像）</p>
+</li>
+<li>
+<p>图像增强（灰度化、二值化、边缘检测）</p>
+</li>
+<li>
+<p>图形绘制（线段、矩形、文字）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>OpenCV 的核心函数与矩阵操作</p>
+</li>
+<li>
+<p>图像坐标与像素访问</p>
+</li>
+<li>
+<p>图像变换（仿射 / 透视）</p>
+</li>
+<li>
+<p>基于阈值和边缘的目标识别基础</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="3ai"><strong>阶段 3：AI 视觉与识别</strong></h3>
+<blockquote>
+<p>目标：学会让机器人「看懂世界」。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>颜色识别、手势识别、人脸识别</p>
+</li>
+<li>
+<p>模型训练与 YOLO 物体检测</p>
+</li>
+<li>
+<p>垃圾识别、目标识别等应用</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>图像特征提取与分类</p>
+</li>
+<li>
+<p>颜色空间转换与阈值分割（HSV、HLS）</p>
+</li>
+<li>
+<p>深度学习目标检测（YOLO 系列）</p>
+</li>
+<li>
+<p>实时视频流检测与追踪算法（如光流）</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="4ai"><strong>阶段 4：AI 视觉追踪与抓取</strong></h3>
+<blockquote>
+<p>目标：实现「看 → 想 → 动」的闭环控制。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>色块、人脸的检测与追踪</p>
+</li>
+<li>
+<p>PID 控制算法实现自动追踪</p>
+</li>
+<li>
+<p>手势识别触发机械臂动作</p>
+</li>
+<li>
+<p>颜色识别与分拣、积木抓取任务</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>图像坐标 → 机械臂坐标映射</p>
+</li>
+<li>
+<p>PID 控制实现平滑跟踪</p>
+</li>
+<li>
+<p>目标识别 + 动作控制联动逻辑</p>
+</li>
+<li>
+<p>多目标决策（颜色、手势、位置）</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="5"><strong>阶段 5：语音控制与人机交互</strong></h3>
+<blockquote>
+<p>目标：让机器人具备语音理解与响应能力。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>语音识别与播报模块</p>
+</li>
+<li>
+<p>语音触发控制、语音播报结果</p>
+</li>
+<li>
+<p>将语音与视觉任务结合（颜色识别 + 播报）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>语音识别模块（离线/在线）</p>
+</li>
+<li>
+<p>语音触发与状态机逻辑</p>
+</li>
+<li>
+<p>多模态融合（语音 + 视觉 + 动作）</p>
+</li>
+<li>
+<p>中文 / 英文 TTS（文本转语音）</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="6ros"><strong>阶段 6：ROS 机器人操作系统</strong></h3>
+<blockquote>
+<p>目标：学习标准的机器人软件架构，掌握 ROS 通信机制。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>ROS 基础命令、Publisher / Subscriber</p>
+</li>
+<li>
+<p>自定义消息与服务</p>
+</li>
+<li>
+<p>TF 坐标变换</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>ROS 节点、话题、服务、动作机制</p>
+</li>
+<li>
+<p>TF 框架的空间定位与坐标系转换</p>
+</li>
+<li>
+<p>Python ROS API 使用</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="7ros-opencv"><strong>阶段 7：ROS + OpenCV 综合应用</strong></h3>
+<blockquote>
+<p>目标：让机器人在 ROS 框架下运行视觉任务。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>目标检测、人脸识别、姿态估计</p>
+</li>
+<li>
+<p>光流算法、特征点追踪、Hough 检测</p>
+</li>
+<li>
+<p>QR 二维码、AR 视觉等</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>ROS 图像传输（<code>cv_bridge</code>）</p>
+</li>
+<li>
+<p>OpenCV 算法与 ROS topic 集成</p>
+</li>
+<li>
+<p>多算法融合（检测 + 追踪 + 分割）</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="8mediapipe-ai"><strong>阶段 8：MediaPipe 高级 AI 感知</strong></h3>
+<blockquote>
+<p>目标：实现基于 MediaPipe 的实时姿态与手势控制。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>手部检测、姿态检测、整体检测</p>
+</li>
+<li>
+<p>人脸识别与特效、三维物体识别</p>
+</li>
+<li>
+<p>手势识别控制机械臂</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>MediaPipe Graph 管线机制</p>
+</li>
+<li>
+<p>手部与人体关键点提取（21/33 点）</p>
+</li>
+<li>
+<p>手势映射到机械臂控制</p>
+</li>
+<li>
+<p>多模态融合（摄像头输入 → 控制输出）</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="9"><strong>阶段 9：运动学与路径规划</strong></h3>
+<blockquote>
+<p>目标：学习机器人真实运动控制与规划算法。</p>
+</blockquote>
+<ul>
+<li>
+<p>学习内容：</p>
+<ul>
+<li>
+<p>MoveIt 环境配置与仿真</p>
+</li>
+<li>
+<p>笛卡尔路径规划、碰撞检测</p>
+</li>
+<li>
+<p>随机移动与轨迹设计</p>
+</li>
+</ul>
+</li>
+<li>
+<p>技术要点：</p>
+<ul>
+<li>
+<p>机械臂运动学（正解 / 逆解）</p>
+</li>
+<li>
+<p>MoveIt! + ROS 的控制接口</p>
+</li>
+<li>
+<p>规划算法与约束控制</p>
+</li>
+<li>
+<p>机器人真实机控制与避障</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_2">🧠 二、关键技术要点（核心知识地图）</h2>
+<table>
+<thead>
+<tr>
+<th>领域</th>
+<th>核心技术</th>
+<th>学习成果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>硬件控制</strong></td>
+<td>舵机控制、PWM、串口通信</td>
+<td>控制机械臂动作</td>
+</tr>
+<tr>
+<td><strong>系统环境</strong></td>
+<td>Linux 命令、JupyterLab、设备绑定</td>
+<td>完善的开发环境</td>
+</tr>
+<tr>
+<td><strong>图像处理</strong></td>
+<td>OpenCV 图像变换、滤波、绘制</td>
+<td>能实现图像分析</td>
+</tr>
+<tr>
+<td><strong>AI视觉</strong></td>
+<td>YOLO / MediaPipe / 特征识别</td>
+<td>能识别颜色、手势、人脸</td>
+</tr>
+<tr>
+<td><strong>控制算法</strong></td>
+<td>PID、坐标映射</td>
+<td>实现自动追踪与抓取</td>
+</tr>
+<tr>
+<td><strong>语音模块</strong></td>
+<td>ASR（语音识别）、TTS（语音合成）</td>
+<td>语音交互与控制</td>
+</tr>
+<tr>
+<td><strong>ROS 框架</strong></td>
+<td>Publisher / Subscriber / TF</td>
+<td>模块化机器人系统</td>
+</tr>
+<tr>
+<td><strong>运动学</strong></td>
+<td>MoveIt!、路径规划、逆运动学</td>
+<td>高级机械臂控制</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">🧩 三、学习建议与顺序</h2>
+<p>1️⃣ <strong>打好基础</strong><br />
+先完成机械臂的组装、中位调试、Linux 基础操作。<br />
+➡️ 建议阶段目标：能通过 Python 控制舵机运动。</p>
+<p>2️⃣ <strong>学习图像与AI视觉</strong><br />
+从 OpenCV 基础学起，再进入颜色识别、手势识别。<br />
+➡️ 阶段目标：能让机械臂根据摄像头识别颜色。</p>
+<p>3️⃣ <strong>融合控制逻辑</strong><br />
+学习 PID + 视觉追踪 + 抓取算法，实现自主反应。<br />
+➡️ 阶段目标：能自动识别并抓取物体。</p>
+<p>4️⃣ <strong>加入语音控制与交互</strong><br />
+➡️ 阶段目标：能听指令 → 执行动作 → 播报结果。</p>
+<p>5️⃣ <strong>进阶 ROS 与 MoveIt!</strong><br />
+学习 ROS 节点通讯、MoveIt 运动规划，实现高阶控制。<br />
+➡️ 阶段目标：实现仿真 + 真机轨迹规划。</p>
+<p>6️⃣ <strong>高级感知与AI控制</strong>（MediaPipe）<br />
+整合视觉、语音、动作控制，打造智能机械臂。<br />
+➡️ 阶段目标：用手势控制机械臂做复杂任务。</p>
+<hr />
+<h2 id="_4">🏁 四、学习终点与成果</h2>
+<p>完成整个教程后，你将具备：</p>
+<ul>
+<li>
+<p>独立搭建 Linux + Python + ROS 开发环境的能力；</p>
+</li>
+<li>
+<p>熟悉 OpenCV 与 MediaPipe 的计算机视觉技能；</p>
+</li>
+<li>
+<p>掌握 AI 识别、PID 控制、语音交互、路径规划；</p>
+</li>
+<li>
+<p>能开发完整的「AI视觉 + 控制 + 语音 + ROS」机器人系统。</p>
+</li>
+</ul>
+<blockquote>
+<p>这份教程能让你从“会用机械臂”成长为“能开发智能机器人系统”的工程师。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
