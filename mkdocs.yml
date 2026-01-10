@@ -1,5 +1,6 @@
-site_name: AI101-IAI
-site_url: http://abotw.github.io/AI101-IAI-DocSite
+site_name: Docs-AI
+site_url: http://abotw.github.io/docs-ai
+repo_url: https://github.com/abotw/docs-ai
 theme:
   name: material
   features:

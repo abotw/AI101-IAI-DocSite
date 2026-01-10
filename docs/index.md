@@ -102,15 +102,15 @@ Whether your goal is to **learn AI from scratch**, **stay updated with trends**,
 To explore AI101:
 
 1. Clone the repository:
-    
+   
     ```bash
     git clone https://github.com/yourusername/AI101.git
     ```
     
 2. Open `index.md` to start reading the main content.
-    
+   
 3. Navigate through different topics using the sidebar or table of contents.
-    
+   
 
 ---
 
@@ -119,13 +119,13 @@ To explore AI101:
 AI101 is an **open and evolving project**. Contributions are welcome! You can:
 
 - Add new AI topics or tutorials.
-    
+  
 - Improve existing content.
-    
+  
 - Provide code examples or visualizations.
-    
+  
 - Suggest edits or updates to ensure accuracy.
-    
+  
 
 ---
 
